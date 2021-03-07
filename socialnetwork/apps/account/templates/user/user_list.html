@@ -1,0 +1,5 @@
+<ul>
+    {% for user in users %}
+        <li><a href="{% url 'profile' pk_login user.pk %}">{{ user.username }}</a></li>
+    {% endfor %}
+</ul>
